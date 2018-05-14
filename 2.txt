@@ -1,0 +1,284 @@
+inputx 224
+inputy 224
+inputd 3
+bytePerParm 2
+
+layer 1 1 conv : 
+parameter size 18816
+flop           118013952
+output         112*112*64
+
+layer 2 1 maxpool : 
+parameter size 0
+flop           1806336
+output         56*56*64
+
+layer 2 2 conv : 
+parameter size 8192
+flop           12845056
+output         56*56*64
+
+layer 2 3 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 4 conv : 
+parameter size 32768
+flop           51380224
+output         56*56*256
+
+layer 2 5 conv : 
+parameter size 32768
+flop           51380224
+output         56*56*64
+
+layer 2 6 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 7 conv : 
+parameter size 32768
+flop           51380224
+output         56*56*256
+
+layer 2 8 conv : 
+parameter size 32768
+flop           51380224
+output         56*56*64
+
+layer 2 9 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 10 conv : 
+parameter size 32768
+flop           51380224
+output         56*56*256
+
+layer 3 1 downsam : 
+parameter size 0
+flop           200704
+output         28*28*256
+
+layer 3 2 conv : 
+parameter size 65536
+flop           25690112
+output         28*28*128
+
+layer 3 3 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 4 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*512
+
+layer 3 5 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*128
+
+layer 3 6 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 7 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*512
+
+layer 3 8 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*128
+
+layer 3 9 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 10 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*512
+
+layer 3 11 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*128
+
+layer 3 12 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 13 conv : 
+parameter size 131072
+flop           51380224
+output         28*28*512
+
+layer 4 1 downsam : 
+parameter size 0
+flop           100352
+output         14*14*512
+
+layer 4 2 conv : 
+parameter size 262144
+flop           25690112
+output         14*14*256
+
+layer 4 3 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 4 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 4 5 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*256
+
+layer 4 6 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 7 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 4 8 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*256
+
+layer 4 9 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 10 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 4 11 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*256
+
+layer 4 12 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 13 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 4 14 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*256
+
+layer 4 15 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 16 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 4 17 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*256
+
+layer 4 18 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 19 conv : 
+parameter size 524288
+flop           51380224
+output         14*14*1024
+
+layer 5 1 downsam : 
+parameter size 0
+flop           50176
+output         7*7*1024
+
+layer 5 2 conv : 
+parameter size 1048576
+flop           25690112
+output         7*7*512
+
+layer 5 3 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 5 4 conv : 
+parameter size 2097152
+flop           51380224
+output         7*7*2048
+
+layer 5 5 conv : 
+parameter size 2097152
+flop           51380224
+output         7*7*512
+
+layer 5 6 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 5 7 conv : 
+parameter size 2097152
+flop           51380224
+output         7*7*2048
+
+layer 5 8 conv : 
+parameter size 2097152
+flop           51380224
+output         7*7*512
+
+layer 5 9 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 5 10 conv : 
+parameter size 2097152
+flop           51380224
+output         7*7*2048
+
+layer 6 1 avgpool : 
+parameter size 0
+flop           100352
+output         7*7*2048
+
+layer 6 2 gblpool : 
+parameter size 0
+flop           100352
+output         1*1*2048
+
+layer 6 3 fc : 
+parameter size 4096000
+flop           2048000
+output         1*1*1000

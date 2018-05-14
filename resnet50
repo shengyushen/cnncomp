@@ -1,0 +1,121 @@
+#	layer	sublay	type	parameters
+#			conv	filterx	filtery	#filter	stride
+	1	1	conv	7	7	64	2
+
+#			maxpool	sizex	sizey	stride	
+	2	1	maxpool	3	3	2
+#			lprj	out_dim
+	2	0	lprj	256
+	2	2	conv	1 1	64	1
+	2 2 relu	
+	2	3	conv	3 3	64	1
+	2 2 relu	
+	2	4	conv	1 1	256	1
+	2 2 relu	
+	2	5	conv	1 1	64	1
+	2 2 relu	
+	2	6	conv	3 3	64	1
+	2 2 relu	
+	2	7	conv	1 1	256	1
+	2 2 relu	
+	2	8	conv	1 1	64	1
+	2 2 relu	
+	2	9	conv	3 3	64	1
+	2 2 relu	
+	2	10	conv	1 1	256	1
+	2 2 relu	
+
+#			downsam stride
+	3	1	downsam	2
+	3	0	lprj	512
+	3	2	conv	1	1	128	1
+	2 2 relu	
+	3	3	conv	3	3	128	1
+	2 2 relu	
+	3	4	conv	1	1	512	1
+	2 2 relu	
+	3	5	conv	1	1	128	1
+	2 2 relu	
+	3	6	conv	3	3	128	1
+	2 2 relu	
+	3	7	conv	1	1	512	1
+	2 2 relu	
+	3	8	conv	1	1	128	1
+	2 2 relu	
+	3	9	conv	3	3	128	1
+	2 2 relu	
+	3	10	conv	1	1	512	1
+	2 2 relu	
+	3	11	conv	1	1	128	1
+	2 2 relu	
+	3	12	conv	3	3	128	1
+	2 2 relu	
+	3	13	conv	1	1	512	1
+	2 2 relu	
+
+	4	1	downsam 2
+	4	0	lprj	1024
+	4	2	conv	1	1	256	1
+	2 2 relu	
+	4	3	conv	3	3	256	1
+	2 2 relu	
+	4	4	conv	1	1	1024	1
+	2 2 relu	
+	4	5	conv	1	1	256	1
+	2 2 relu	
+	4	6	conv	3	3	256	1
+	2 2 relu	
+	4	7	conv	1	1	1024	1
+	2 2 relu	
+	4	8	conv	1	1	256	1
+	2 2 relu	
+	4	9	conv	3	3	256	1
+	2 2 relu	
+	4	10	conv	1	1	1024	1
+	2 2 relu	
+	4	11	conv	1	1	256	1
+	2 2 relu	
+	4	12	conv	3	3	256	1
+	2 2 relu	
+	4	13	conv	1	1	1024	1
+	2 2 relu	
+	4	14	conv	1	1	256	1
+	2 2 relu	
+	4	15	conv	3	3	256	1
+	2 2 relu	
+	4	16	conv	1	1	1024	1
+	2 2 relu	
+	4	17	conv	1	1	256	1
+	2 2 relu	
+	4	18	conv	3	3	256	1
+	2 2 relu	
+	4	19	conv	1	1	1024	1
+	2 2 relu	
+
+	5	1	downsam	2
+	5	0	lprj	2048
+	5	2	conv	1	1	512	1
+	2 2 relu	
+	5	3	conv	3	3	512	1
+	2 2 relu	
+	5	4	conv	1	1	2048	1
+	2 2 relu	
+	5	5	conv	1	1	512	1
+	2 2 relu	
+	5	6	conv	3	3	512	1
+	2 2 relu	
+	5	7	conv	1	1	2048	1
+	2 2 relu	
+	5	8	conv	1	1	512	1
+	2 2 relu	
+	5	9	conv	3	3	512	1
+	2 2 relu	
+	5	10	conv	1	1	2048	1
+	2 2 relu	
+
+#			avgpool	
+	6	1	avgpool	
+#			gblpool		
+	6	2	gblpool	
+#			fc	#class
+	6	3	fc	1000

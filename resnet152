@@ -1,0 +1,330 @@
+#	layer	sublay	type	parameters
+#			conv	filterx	filtery	#filter	stride
+	1	1	conv	7	7	64	2
+
+#			maxpool	sizex	sizey	stride	
+	2	1	maxpool	3	3	2
+#			lprj	out_dim
+	2	0	lprj	256
+	2	2	conv	1 1	64	1
+	2 2 relu	
+	2	3	conv	3 3	64	1
+	2 2 relu	
+	2	4	conv	1 1	256	1
+	2 2 relu	
+	2	5	conv	1 1	64	1
+	2 2 relu	
+	2	6	conv	3 3	64	1
+	2 2 relu	
+	2	7	conv	1 1	256	1
+	2 2 relu	
+	2	8	conv	1 1	64	1
+	2 2 relu	
+	2	9	conv	3 3	64	1
+	2 2 relu	
+	2	10	conv	1 1	256	1
+	2 2 relu	
+
+#			downsam stride
+	3	1	downsam	2
+	3	0	lprj	512
+	3	2	conv	1	1	128	1
+	2 2 relu	
+	3	3	conv	3	3	128	1
+	2 2 relu	
+	3	4	conv	1	1	512	1
+	2 2 relu	
+	3	5	conv	1	1	128	1
+	2 2 relu	
+	3	6	conv	3	3	128	1
+	2 2 relu	
+	3	7	conv	1	1	512	1
+	2 2 relu	
+	3	8	conv	1	1	128	1
+	2 2 relu	
+	3	9	conv	3	3	128	1
+	2 2 relu	
+	3	10	conv	1	1	512	1
+	2 2 relu	
+	3	11	conv	1	1	128	1
+	2 2 relu	
+	3	12	conv	3	3	128	1
+	2 2 relu	
+	3	13	conv	1	1	512	1
+	2 2 relu	
+	3	14	conv	1	1	128	1
+	2 2 relu	
+	3	15	conv	3	3	128	1
+	2 2 relu	
+	3	16	conv	1	1	512	1
+	2 2 relu	
+	3	17	conv	1	1	128	1
+	2 2 relu	
+	3	18	conv	3	3	128	1
+	2 2 relu	
+	3	19	conv	1	1	512	1
+	2 2 relu	
+	3	20	conv	1	1	128	1
+	2 2 relu	
+	3	21	conv	3	3	128	1
+	2 2 relu	
+	3	22	conv	1	1	512	1
+	2 2 relu	
+	3	23	conv	1	1	128	1
+	2 2 relu	
+	3	24	conv	3	3	128	1
+	2 2 relu	
+	3	25	conv	1	1	512	1
+	2 2 relu	
+	3	26	conv	1	1	128	1
+	2 2 relu	
+	3	27	conv	3	3	128	1
+	2 2 relu	
+	3	28	conv	1	1	512	1
+	2 2 relu	
+
+	4	1	downsam 2
+	4	0	lprj	1024
+	4	2	conv	1	1	256	1
+	2 2 relu	
+	4	3	conv	3	3	256	1
+	2 2 relu	
+	4	4	conv	1	1	1024	1
+	2 2 relu	
+	4	5	conv	1	1	256	1
+	2 2 relu	
+	4	6	conv	3	3	256	1
+	2 2 relu	
+	4	7	conv	1	1	1024	1
+	2 2 relu	
+	4	8	conv	1	1	256	1
+	2 2 relu	
+	4	9	conv	3	3	256	1
+	2 2 relu	
+	4	10	conv	1	1	1024	1
+	2 2 relu	
+	4	11	conv	1	1	256	1
+	2 2 relu	
+	4	12	conv	3	3	256	1
+	2 2 relu	
+	4	13	conv	1	1	1024	1
+	2 2 relu	
+	4	14	conv	1	1	256	1
+	2 2 relu	
+	4	15	conv	3	3	256	1
+	2 2 relu	
+	4	16	conv	1	1	1024	1
+	2 2 relu	
+	4	17	conv	1	1	256	1
+	2 2 relu	
+	4	18	conv	3	3	256	1
+	2 2 relu	
+	4	19	conv	1	1	1024	1
+	2 2 relu	
+	4	20	conv	1	1	256	1
+	2 2 relu	
+	4	21	conv	3	3	256	1
+	2 2 relu	
+	4	22	conv	1	1	1024	1
+	2 2 relu	
+	4	23	conv	1	1	256	1
+	2 2 relu	
+	4	24	conv	3	3	256	1
+	2 2 relu	
+	4	25	conv	1	1	1024	1
+	2 2 relu	
+	4	26	conv	1	1	256	1
+	2 2 relu	
+	4	27	conv	3	3	256	1
+	2 2 relu	
+	4	28	conv	1	1	1024	1
+	2 2 relu	
+	4	29	conv	1	1	256	1
+	2 2 relu	
+	4	30	conv	3	3	256	1
+	2 2 relu	
+	4	31	conv	1	1	1024	1
+	2 2 relu	
+	4	32	conv	1	1	256	1
+	2 2 relu	
+	4	33	conv	3	3	256	1
+	2 2 relu	
+	4	34	conv	1	1	1024	1
+	2 2 relu	
+	4	35	conv	1	1	256	1
+	2 2 relu	
+	4	36	conv	3	3	256	1
+	2 2 relu	
+	4	37	conv	1	1	1024	1
+	2 2 relu	
+	4	38	conv	1	1	256	1
+	2 2 relu	
+	4	39	conv	3	3	256	1
+	2 2 relu	
+	4	40	conv	1	1	1024	1
+	2 2 relu	
+	4	41	conv	1	1	256	1
+	2 2 relu	
+	4	42	conv	3	3	256	1
+	2 2 relu	
+	4	43	conv	1	1	1024	1
+	2 2 relu	
+	4	44	conv	1	1	256	1
+	2 2 relu	
+	4	45	conv	3	3	256	1
+	2 2 relu	
+	4	46	conv	1	1	1024	1
+	2 2 relu	
+	4	47	conv	1	1	256	1
+	2 2 relu	
+	4	48	conv	3	3	256	1
+	2 2 relu	
+	4	49	conv	1	1	1024	1
+	2 2 relu	
+	4	50	conv	1	1	256	1
+	2 2 relu	
+	4	51	conv	3	3	256	1
+	2 2 relu	
+	4	52	conv	1	1	1024	1
+	2 2 relu	
+	4	53	conv	1	1	256	1
+	2 2 relu	
+	4	54	conv	3	3	256	1
+	2 2 relu	
+	4	55	conv	1	1	1024	1
+	2 2 relu	
+	4	56	conv	1	1	256	1
+	2 2 relu	
+	4	57	conv	3	3	256	1
+	2 2 relu	
+	4	58	conv	1	1	1024	1
+	2 2 relu	
+	4	59	conv	1	1	256	1
+	2 2 relu	
+	4	60	conv	3	3	256	1
+	2 2 relu	
+	4	61	conv	1	1	1024	1
+	2 2 relu	
+	4	62	conv	1	1	256	1
+	2 2 relu	
+	4	63	conv	3	3	256	1
+	2 2 relu	
+	4	64	conv	1	1	1024	1
+	2 2 relu	
+	4	65	conv	1	1	256	1
+	2 2 relu	
+	4	66	conv	3	3	256	1
+	2 2 relu	
+	4	67	conv	1	1	1024	1
+	2 2 relu	
+	4	68	conv	1	1	256	1
+	2 2 relu	
+	4	69	conv	3	3	256	1
+	2 2 relu	
+	4	70	conv	1	1	1024	1
+	2 2 relu	
+	4	71	conv	1	1	256	1
+	2 2 relu	
+	4	72	conv	3	3	256	1
+	2 2 relu	
+	4	73	conv	1	1	1024	1
+	2 2 relu	
+	4	74	conv	1	1	256	1
+	2 2 relu	
+	4	75	conv	3	3	256	1
+	2 2 relu	
+	4	76	conv	1	1	1024	1
+	2 2 relu	
+	4	77	conv	1	1	256	1
+	2 2 relu	
+	4	78	conv	3	3	256	1
+	2 2 relu	
+	4	79	conv	1	1	1024	1
+	2 2 relu	
+	4	80	conv	1	1	256	1
+	2 2 relu	
+	4	81	conv	3	3	256	1
+	2 2 relu	
+	4	82	conv	1	1	1024	1
+	2 2 relu	
+	4	83	conv	1	1	256	1
+	2 2 relu	
+	4	84	conv	3	3	256	1
+	2 2 relu	
+	4	85	conv	1	1	1024	1
+	2 2 relu	
+	4	86	conv	1	1	256	1
+	2 2 relu	
+	4	87	conv	3	3	256	1
+	2 2 relu	
+	4	88	conv	1	1	1024	1
+	2 2 relu	
+	4	89	conv	1	1	256	1
+	2 2 relu	
+	4	90	conv	3	3	256	1
+	2 2 relu	
+	4	91	conv	1	1	1024	1
+	2 2 relu	
+	4	92	conv	1	1	256	1
+	2 2 relu	
+	4	93	conv	3	3	256	1
+	2 2 relu	
+	4	94	conv	1	1	1024	1
+	2 2 relu	
+	4	95	conv	1	1	256	1
+	2 2 relu	
+	4	96	conv	3	3	256	1
+	2 2 relu	
+	4	97	conv	1	1	1024	1
+	2 2 relu	
+	4	98	conv	1	1	256	1
+	2 2 relu	
+	4	99	conv	3	3	256	1
+	2 2 relu	
+	4	100	conv	1	1	1024	1
+	2 2 relu	
+	4	101	conv	1	1	256	1
+	2 2 relu	
+	4	102	conv	3	3	256	1
+	2 2 relu	
+	4	103	conv	1	1	1024	1
+	2 2 relu	
+	4	104	conv	1	1	256	1
+	2 2 relu	
+	4	105	conv	3	3	256	1
+	2 2 relu	
+	4	106	conv	1	1	1024	1
+	2 2 relu	
+	4	107	conv	1	1	256	1
+	2 2 relu	
+	4	108	conv	3	3	256	1
+	2 2 relu	
+	4	109	conv	1	1	1024	1
+
+	5	1	downsam	2
+	5	0	lprj	2048
+	5	2	conv	1	1	512	1
+	2 2 relu	
+	5	3	conv	3	3	512	1
+	2 2 relu	
+	5	4	conv	1	1	2048	1
+	2 2 relu	
+	5	5	conv	1	1	512	1
+	2 2 relu	
+	5	6	conv	3	3	512	1
+	2 2 relu	
+	5	7	conv	1	1	2048	1
+	2 2 relu	
+	5	8	conv	1	1	512	1
+	2 2 relu	
+	5	9	conv	3	3	512	1
+	2 2 relu	
+	5	10	conv	1	1	2048	1
+	2 2 relu	
+
+#			avgpool	
+	6	1	avgpool	
+#			gblpool		
+	6	2	gblpool	
+#			fc	#class
+	6	3	fc	1000

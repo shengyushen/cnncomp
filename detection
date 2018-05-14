@@ -1,0 +1,8 @@
+# model input size param memory feature memory flops
+rfcn-res50 600 x 850 122 MB 1024 MB 79 GFLOPS 
+rfcn-res101 600 x 850 194 MB 2048 MB 117 GFLOPS 
+ssd-vggvd-300 300 x 300 100 MB 116 MB 31 GFLOPS 
+ssd-vggvd-512 512 x 512 104 MB 337 MB 91 GFLOPS 
+#ssd-mobilenet-ft 300 x 300 22 MB 37 MB 1 GFLOPs 
+faster-rcnn-vggvd 600 x 850 523 MB 600 MB 172 GFLOPS 
+

@@ -1,0 +1,7 @@
+#model input size param memory feature memory flops 
+pascal-fcn32s 384 x 384 519 MB 423 MB 125 GFLOPS 
+pascal-fcn16s 384 x 384 514 MB 424 MB 125 GFLOPS 
+pascal-fcn8s 384 x 384 513 MB 426 MB 125 GFLOPS 
+deeplab-vggvd-v2 513 x 513 144 MB 755 MB 202 GFLOPs 
+deeplab-res101-v2 513 x 513 505 MB 4096 MB 346 GFLOPs 
+

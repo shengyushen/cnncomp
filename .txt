@@ -1,0 +1,124 @@
+inputx 224
+inputy 224
+inputd 3
+bytePerParm 2
+
+layer 1 1 conv : 
+parameter size 18816
+flop           118013952
+output         112*112*64
+
+layer 2 1 maxpool : 
+parameter size 0
+flop           1806336
+output         56*56*64
+
+layer 2 2 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 3 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 4 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 2 5 conv : 
+parameter size 73728
+flop           115605504
+output         56*56*64
+
+layer 3 1 downsam : 
+parameter size 0
+flop           50176
+output         28*28*64
+
+layer 3 2 conv : 
+parameter size 147456
+flop           57802752
+output         28*28*128
+
+layer 3 3 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 4 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 3 5 conv : 
+parameter size 294912
+flop           115605504
+output         28*28*128
+
+layer 4 1 downsam : 
+parameter size 0
+flop           25088
+output         14*14*128
+
+layer 4 2 conv : 
+parameter size 589824
+flop           57802752
+output         14*14*256
+
+layer 4 3 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 4 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 4 5 conv : 
+parameter size 1179648
+flop           115605504
+output         14*14*256
+
+layer 5 1 downsam : 
+parameter size 0
+flop           12544
+output         7*7*256
+
+layer 5 2 conv : 
+parameter size 2359296
+flop           57802752
+output         7*7*512
+
+layer 5 3 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 5 4 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 5 5 conv : 
+parameter size 4718592
+flop           115605504
+output         7*7*512
+
+layer 6 1 avgpool : 
+parameter size 0
+flop           25088
+output         7*7*512
+
+layer 6 2 gblpool : 
+parameter size 0
+flop           25088
+output         1*1*512
+
+layer 6 3 fc : 
+parameter size 1024000
+flop           512000
+output         1*1*1000

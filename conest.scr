@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -ne 5 ] ; 
+    then echo "Usage : conest.scr <input x size> <input y size> <input depth> <bytes per parameter> <network description file>"
+else 
+	rm -f param flop fetmem;
+	touch param flop fetmem;
+	awk -v ix=$1 -v iy=$2 -v id=$3  -v bpp=$4 -f est.awk $5 > ${5}.txt
+	awk 'BEGIN{layer=0;sublayer=0;param=0;flop=0;fetmem=0;} {if($1=="layer") {layer=$2;sublayer=$3;} else if($1=="flop") {print layer " " sublayer " " $2 >> "flop";flop=flop+$2;} else if($1=="parameter" && $2=="size"){print layer " " sublayer " " $3 >> "param";param=param+$3;} else if($1=="fetmem") {print layer " " sublayer " " $2 >> "fetmem";fetmem=fetmem+$2;} } END{print "total flop : " flop; print "total parameter size : " param;print "total fetmem : " fetmem;}' ${5}.txt 
+#	gnuplot -p -e 'set style data histogram;set style fill solid ;plot "param" u 3'
+#	gnuplot -p -e 'set style data histogram;set style fill solid ;plot "flop" u 3'
+	gnuplot -p -e 'set style data histogram;set style fill solid ;plot "fetmem" u 3'
+fi
