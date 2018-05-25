@@ -8,6 +8,9 @@ BEGIN {
 	print "inputy " inputy;
 	print "inputd " inputd;
 	print "bytePerParm " bytePerParm;
+	
+	fetmem=inputd*inputx*inputy*bytePerParm;
+	print "fetmem         " fetmem;
 
 }
 
@@ -100,8 +103,8 @@ BEGIN {
 			print "output         " newinputx "*" newinputy "*" newinputd;
 		} else if (type=="fc") {	
 			width = $4;
-			newinputx=inputx;
-			newinputy=inputy;
+			newinputx=1;
+			newinputy=1;
 			newinputd=width;
 			parameter_num=newinputx*newinputy*newinputd*inputx*inputy*inputd;
 			parameter_sz=parameter_num*bytePerParm;
@@ -115,7 +118,7 @@ BEGIN {
 		} else if(type =="relu") {
 			# almost no parameter and flop, only feather 
 			print "\nlayer " layer " " sublayer " " type " : ";
-			fetmem=inputx*inputy*inputd*bytePerParm;
+			fetmem=inputx*inputy*inputd;
 			print "fetmem         " fetmem;
 		} else if(type =="lprj") {
 			# combine each inputx*inputy plane to $4 planes 
@@ -127,6 +130,9 @@ BEGIN {
 			print "parameter size " parameter_sz;
 			print "flop           " flop;
 			print "fetmem         " fetmem;
+#			print "inputd _4 " inputd " " $4 ;
+		} else if(type =="identity") {
+			# combine each inputx*inputy plane to $4 planes 
 #			print "inputd _4 " inputd " " $4 ;
 		} else {
 			print

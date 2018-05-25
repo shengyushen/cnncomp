@@ -1,216 +1,217 @@
 inputx 224
 inputy 224
 inputd 3
-bytePerParm 2
+bytePerParm 4
+fetmem         602112
 
 layer 1 1 conv : 
-parameter size 18816
+parameter size 37632
 flop           118013952
-fetmem         1605632
+fetmem         3211264
 output         112*112*64
 
 layer 2 1 maxpool : 
 parameter size 0
 flop           1806336
-fetmem         401408
+fetmem         802816
 output         56*56*64
 
 layer 2 0 lprj : 
-parameter size 8192
+parameter size 16384
 flop           12845056
-fetmem         401408
+fetmem         802816
 
 layer 2 2 conv : 
-parameter size 73728
+parameter size 147456
 flop           115605504
-fetmem         401408
+fetmem         802816
 output         56*56*64
 
 layer 2 2 relu : 
-fetmem         401408
+fetmem         200704
 
 layer 2 3 conv : 
-parameter size 73728
+parameter size 147456
 flop           115605504
-fetmem         401408
+fetmem         802816
 output         56*56*64
 
 layer 2 2 relu : 
-fetmem         401408
+fetmem         200704
 
 layer 2 4 conv : 
-parameter size 73728
+parameter size 147456
 flop           115605504
-fetmem         401408
+fetmem         802816
 output         56*56*64
 
 layer 2 2 relu : 
-fetmem         401408
+fetmem         200704
 
 layer 2 5 conv : 
-parameter size 73728
+parameter size 147456
 flop           115605504
-fetmem         401408
+fetmem         802816
 output         56*56*64
 
 layer 2 2 relu : 
-fetmem         401408
+fetmem         200704
 
 layer 3 1 downsam : 
 parameter size 0
 flop           50176
-fetmem         100352
+fetmem         200704
 output         28*28*64
 
 layer 2 0 lprj : 
-parameter size 16384
+parameter size 32768
 flop           6422528
-fetmem         200704
+fetmem         401408
 
 layer 3 2 conv : 
-parameter size 147456
+parameter size 294912
 flop           57802752
-fetmem         200704
+fetmem         401408
 output         28*28*128
 
 layer 2 2 relu : 
-fetmem         200704
+fetmem         100352
 
 layer 3 3 conv : 
-parameter size 294912
+parameter size 589824
 flop           115605504
-fetmem         200704
+fetmem         401408
 output         28*28*128
 
 layer 2 2 relu : 
-fetmem         200704
+fetmem         100352
 
 layer 3 4 conv : 
-parameter size 294912
+parameter size 589824
 flop           115605504
-fetmem         200704
+fetmem         401408
 output         28*28*128
 
 layer 2 2 relu : 
-fetmem         200704
+fetmem         100352
 
 layer 3 5 conv : 
-parameter size 294912
+parameter size 589824
 flop           115605504
-fetmem         200704
+fetmem         401408
 output         28*28*128
 
 layer 2 2 relu : 
-fetmem         200704
+fetmem         100352
 
 layer 4 1 downsam : 
 parameter size 0
 flop           25088
-fetmem         50176
+fetmem         100352
 output         14*14*128
 
 layer 2 0 lprj : 
-parameter size 65536
+parameter size 131072
 flop           6422528
-fetmem         100352
+fetmem         200704
 
 layer 4 2 conv : 
-parameter size 589824
+parameter size 1179648
 flop           57802752
-fetmem         100352
+fetmem         200704
 output         14*14*256
 
 layer 2 2 relu : 
-fetmem         100352
+fetmem         50176
 
 layer 4 3 conv : 
-parameter size 1179648
+parameter size 2359296
 flop           115605504
-fetmem         100352
+fetmem         200704
 output         14*14*256
 
 layer 2 2 relu : 
-fetmem         100352
+fetmem         50176
 
 layer 4 4 conv : 
-parameter size 1179648
+parameter size 2359296
 flop           115605504
-fetmem         100352
+fetmem         200704
 output         14*14*256
 
 layer 2 2 relu : 
-fetmem         100352
+fetmem         50176
 
 layer 4 5 conv : 
-parameter size 1179648
+parameter size 2359296
 flop           115605504
-fetmem         100352
+fetmem         200704
 output         14*14*256
 
 layer 2 2 relu : 
-fetmem         100352
+fetmem         50176
 
 layer 5 1 downsam : 
 parameter size 0
 flop           12544
-fetmem         25088
+fetmem         50176
 output         7*7*256
 
 layer 2 0 lprj : 
-parameter size 262144
+parameter size 524288
 flop           6422528
-fetmem         50176
+fetmem         100352
 
 layer 5 2 conv : 
-parameter size 2359296
+parameter size 4718592
 flop           57802752
-fetmem         50176
+fetmem         100352
 output         7*7*512
 
 layer 2 2 relu : 
-fetmem         50176
+fetmem         25088
 
 layer 5 3 conv : 
-parameter size 4718592
+parameter size 9437184
 flop           115605504
-fetmem         50176
+fetmem         100352
 output         7*7*512
 
 layer 2 2 relu : 
-fetmem         50176
+fetmem         25088
 
 layer 5 4 conv : 
-parameter size 4718592
+parameter size 9437184
 flop           115605504
-fetmem         50176
+fetmem         100352
 output         7*7*512
 
 layer 2 2 relu : 
-fetmem         50176
+fetmem         25088
 
 layer 5 5 conv : 
-parameter size 4718592
+parameter size 9437184
 flop           115605504
-fetmem         50176
+fetmem         100352
 output         7*7*512
 
 layer 2 2 relu : 
-fetmem         50176
+fetmem         25088
 
 layer 6 1 avgpool : 
 parameter size 0
 flop           25088
-fetmem         50176
+fetmem         100352
 output         7*7*512
 
 layer 6 2 gblpool : 
 parameter size 0
 flop           25088
-fetmem         1024
+fetmem         2048
 output         1*1*512
 
 layer 6 3 fc : 
-parameter size 1024000
+parameter size 2048000
 flop           512000
-fetmem         2000
+fetmem         4000
 output         1*1*1000
