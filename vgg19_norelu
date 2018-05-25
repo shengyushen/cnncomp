@@ -1,0 +1,31 @@
+#	layer	sublay	type	parameters
+#			conv	filterx	filtery	#filter	stride
+	1	1	conv	3	3	64	1
+	2	1	conv	3	3	64	1
+	2	3	maxpool	2	2	2
+
+	3	1	conv	3	3	128	1
+	4	1	conv	3	3	128	1
+	4	2	maxpool	2	2	2
+
+	5	1	conv	3	3	256	1
+	6	1	conv	3	3	256	1
+	7	1	conv	3	3	256	1
+	8	1	conv	3	3	256	1
+	8	2	maxpool	2	2	2
+
+	9	1	conv	3	3	512	1
+	10	1	conv	3	3	512	1
+	11	1	conv	3	3	512	1
+	12	1	conv	3	3	512	1
+	12	2	maxpool	2	2	2
+
+	13	1	conv	3	3	512	1
+	14	1	conv	3	3	512	1
+	15	1	conv	3	3	512	1
+	16	1	conv	3	3	512	1
+	16	2	maxpool	2	2	2
+
+	17	1	fc	4096
+	18	1	fc	4096
+	19	1	fc	1000

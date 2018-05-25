@@ -1,0 +1,5 @@
+inputx 224
+inputy 224
+inputd 3
+bytePerParm 4
+fetmem         602112
