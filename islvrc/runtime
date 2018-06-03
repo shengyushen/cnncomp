@@ -1,0 +1,6 @@
+# year runtime	gpus
+12/08/01	120	2 # ImageNet Classification with Deep Convolutional Neural Networks
+15/12/01	29	8	#	 Deep residual learning for image recognition
+17/06/01	1		256	# Accurate, large minibatch SGD: training ImageNet in 1 hour. 
+17/09/01	0.5	1600 	#  ImageNet training in minutes
+17/11/01	0.25	1024 #  Extremely Large Minibatch SGD: Training ResNet-50 on ImageNet in 15 Minutes

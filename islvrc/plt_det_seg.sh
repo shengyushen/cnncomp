@@ -1,0 +1,1 @@
+gnuplot -p -e 'set title "Mean average precision";set yrange [0:100];set datafile missing 'NaN';set xdata time;set timefmt "%y/%m/%d";plot "detection" u 1:3 with linesp title "VOC07" ,"detection"  u 1:4 with linesp title "VOC10","detection" u 1:6 with linesp title "ILSVRC14","detection" u 1:7 with linesp title "COCO det 0.5","detection" u 1:9 with linesp title "COCO seg 0.5"'

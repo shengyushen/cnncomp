@@ -1,0 +1,16 @@
+# time		name					det_VOC2007	det_vco10 det_vco12		det_ILSVRC14		det_COCO(.5)		seg_VOC2011		seg_COCO feature_mem
+13/11/11	RCNN					66.0				NaN				NaN					31.4						NaN							47.9					NaN				NaN
+14/06/18	SPP						59.2				NaN				NaN					35.11						NaN							NaN						NaN				NaN
+14/11/14	Pascal-FCN		NaN					NaN				NaN					NaN							NaN							62.7					NaN				NaN
+14/12/22	DeepLab				NaN					NaN				NaN					NaN							NaN							71.6					NaN				4096
+15/04/30	FAST-RCNN			70.0				68.8			68.4				NaN							35.9						NaN						NaN				NaN
+15/06/04	Faster-RCNN		69.9				NaN				67.0				NaN							42.7						NaN						NaN				600
+15/06/08	YOLOv2				63.4				NaN				57.9				NaN							48.1						NaN						NaN				NaN
+15/12/08	SSD						74.3				74.9			NaN					43.4						46.5						NaN						NaN				337
+15/12/14	MCN						NaN					NaN				NaN					NaN							NaN							NaN						44.3			NaN
+16/05/20	R-FCN					79.5				NaN				NaN					NaN							51.9						NaN						NaN				2048
+16/11/23	FCIS					NaN					NaN				NaN					NaN							NaN							NaN						54.5			NaN
+17/3/20		Mask-RCNN			NaN					NaN				NaN					NaN							62.3						NaN						60				NaN
+17/08/7		RetinaNet			NaN					NaN				NaN					NaN							61.1						NaN						NaN				NaN
+18/04/03	YOLOv3				NaN					NaN				NaN					NaN							57.9						NaN						NaN				206
+
