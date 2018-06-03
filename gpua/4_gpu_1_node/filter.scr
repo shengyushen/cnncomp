@@ -1,0 +1,8 @@
+#cat sdf1|awk -F, '{if($16~/\(0\)/){print}}'|awk -F, 'BEGIN{ssy=0;} {if(ssy==0){print $16 " " $23 " 0";ssy=$1} else {print  $16 " " $23 " " $1-ssy;}}'|grep  "memcpy\|Eigen\|tensorflow\|cudnn\|memset\|nchw\|nhwc\|scale\|sgemm" > sdf2
+cat sdf1|awk -F, '{if($16~/\(0\)/){print}}'|awk -F, 'BEGIN{ssy=0;} {if(ssy==0){print  $23 " 0";ssy=$1} else {print   $23 " " $1-ssy;}}'|grep  "memcpy\|Eigen\|tensorflow\|cudnn\|memset\|nchw\|nhwc\|scale\|sgemm" > sdf2
+cat sdf2|grep -v _ZN5E > sdf21
+cat sdf21|grep -v memcpy > sdf22
+
+cat sdf1|awk -F, 'BEGIN{ssy=0;} {if(ssy==0){print  $23 " 0";ssy=1000*$1} else {if($16 ~ /\(0\)/) {print   $23 " " 1000*$1-ssy;ssy=1000*$1;}}}'> sdfdiff
+cat sdf1|awk -F, 'BEGIN{ssy=0;} {if(ssy==0){print  $23 " 0";ssy=1000*$1} else {if($16 ~ /\(0\)/) {sdf= 1000*$1-ssy;ssy=1000*$1;if(sdf>=0.5){print "";print bak;print $0};bak=$0}}}'> sdflarge
+

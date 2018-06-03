@@ -1,0 +1,10 @@
+rm -f *_1 *_2 *_3 *_4
+cp $1.csv $1.csv_1
+cat $1.csv_1|grep ",,,[1-9].*HtoD" > $1.csv_2
+tail $1.csv_2 -n 80|head -n 50 > $1.csv_3
+awk -F, '{print $1}' $1.csv_3 >  sdf
+echo -n $1 >> record
+gnuplot -p -e 'f(x)=a+b*x;fit f(x) "sdf" via a,b;plot "sdf" ,f(x) ;set print "record" append;print  " " ,b' 
+
+
+

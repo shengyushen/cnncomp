@@ -1,0 +1,5 @@
+# year model_name parm_sz() flop
+2012 alexnet		233
+2014 vgg
+2015 googlenet
+2016 resnet 

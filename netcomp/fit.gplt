@@ -1,0 +1,3 @@
+nettimeMS(x)=a+b*x
+fit nettimeMS(x) 'p2p_ms_MB' using 2:1 via a,b
+plot 'p2p_ms_MB' using 2:1, nettimeMS(x)

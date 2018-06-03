@@ -1,0 +1,31 @@
+rm -f 0_1 0_2 0_3 1_0 1_2 1_3 2_0 2_1 2_3 3_0 3_1 3_2
+touch 0_1 0_2 0_3 1_0 1_2 1_3 2_0 2_1 2_3 3_0 3_1 3_2
+cat sdf1 |awk -f f4.awk
+echo "from	to	small	large	total	number"
+cat 0_1 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 0 to\t 1 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 0_2 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 0 to\t 2 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 0_3 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 0 to\t 3 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 1_0 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 1 to\t 0 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 1_2 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 1 to\t 2 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 1_3 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 1 to\t 3 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 2_0 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 2 to\t 0 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 2_1 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 2 to\t 1 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 2_3 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 2 to\t 3 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 3_0 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 3 to\t 0 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 3_1 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 3 to\t 1 \t" small "\t" large "\t" small+large "\t" wc}'
+cat 3_2 | awk -F, '{wc=wc+1;if($12<1.0) {small=small+$12} else {large=large+$12}} END{print " 3 to\t 2 \t" small "\t" large "\t" small+large "\t" wc}'
+
+cat 0_1 | awk -F, '{print $1 " " $12}' > sdf_0_1
+cat 0_2 | awk -F, '{print $1 " " $12}' > sdf_0_2
+cat 0_3 | awk -F, '{print $1 " " $12}' > sdf_0_3
+cat 1_0 | awk -F, '{print $1 " " $12}' > sdf_1_0
+cat 1_2 | awk -F, '{print $1 " " $12}' > sdf_1_2
+cat 1_3 | awk -F, '{print $1 " " $12}' > sdf_1_3
+cat 2_0 | awk -F, '{print $1 " " $12}' > sdf_2_0
+cat 2_1 | awk -F, '{print $1 " " $12}' > sdf_2_1
+cat 2_3 | awk -F, '{print $1 " " $12}' > sdf_2_3
+cat 3_0 | awk -F, '{print $1 " " $12}' > sdf_3_0
+cat 3_1 | awk -F, '{print $1 " " $12}' > sdf_3_1
+cat 3_2 | awk -F, '{print $1 " " $12}' > sdf_3_2
+
+gnuplot -p -e 'plot "sdf_0_1","sdf_0_2","sdf_0_3","sdf_1_0","sdf_1_2","sdf_1_3","sdf_2_0","sdf_2_1","sdf_2_3","sdf_3_0","sdf_3_1","sdf_3_2"'
