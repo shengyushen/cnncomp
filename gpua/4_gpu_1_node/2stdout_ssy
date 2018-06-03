@@ -1,0 +1,210 @@
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  1024 global
+             256 per device
+Num batches: 100
+Num epochs:  0.08
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 2785.1 +/- 0.0 (jitter = 0.0)	9.561
+10	images/sec: 2760.3 +/- 10.9 (jitter = 45.9)	9.494
+20	images/sec: 2765.3 +/- 6.6 (jitter = 34.6)	9.352
+30	images/sec: 2761.8 +/- 5.2 (jitter = 31.0)	9.316
+40	images/sec: 2763.6 +/- 4.2 (jitter = 28.7)	9.271
+50	images/sec: 2764.8 +/- 4.2 (jitter = 33.0)	9.202
+60	images/sec: 2767.7 +/- 3.8 (jitter = 34.7)	9.191
+70	images/sec: 2767.4 +/- 3.5 (jitter = 34.5)	9.182
+80	images/sec: 2765.0 +/- 3.5 (jitter = 34.5)	9.174
+90	images/sec: 2763.4 +/- 3.4 (jitter = 35.6)	9.189
+100	images/sec: 2756.6 +/- 5.3 (jitter = 33.9)	9.174
+----------------------------------------------------------------
+total images/sec: 2755.36
+train time:0.37146868228912355 
+----------------------------------------------------------------
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  512 global
+             128 per device
+Num batches: 100
+Num epochs:  0.04
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 2351.8 +/- 0.0 (jitter = 0.0)	9.548
+10	images/sec: 2352.4 +/- 10.3 (jitter = 28.9)	9.550
+20	images/sec: 2346.0 +/- 8.9 (jitter = 42.3)	9.486
+30	images/sec: 2338.3 +/- 7.4 (jitter = 31.4)	9.434
+40	images/sec: 2333.0 +/- 5.9 (jitter = 30.4)	9.477
+50	images/sec: 2332.8 +/- 4.9 (jitter = 29.9)	9.333
+60	images/sec: 2330.7 +/- 4.6 (jitter = 31.4)	9.348
+70	images/sec: 2328.7 +/- 4.1 (jitter = 30.9)	9.349
+80	images/sec: 2325.8 +/- 4.1 (jitter = 29.5)	9.274
+90	images/sec: 2321.7 +/- 5.3 (jitter = 29.5)	9.253
+100	images/sec: 2319.8 +/- 5.0 (jitter = 28.0)	9.236
+----------------------------------------------------------------
+total images/sec: 2318.81
+train time:0.22071022510528565 
+----------------------------------------------------------------
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  256 global
+             64 per device
+Num batches: 100
+Num epochs:  0.02
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 2014.6 +/- 0.0 (jitter = 0.0)	9.662
+10	images/sec: 1940.3 +/- 13.9 (jitter = 36.8)	9.567
+20	images/sec: 1927.0 +/- 12.0 (jitter = 76.1)	9.476
+30	images/sec: 1867.7 +/- 33.2 (jitter = 76.9)	9.569
+40	images/sec: 1882.1 +/- 26.0 (jitter = 80.5)	9.512
+50	images/sec: 1887.1 +/- 21.0 (jitter = 75.2)	9.504
+60	images/sec: 1881.5 +/- 18.0 (jitter = 69.0)	9.484
+70	images/sec: 1877.1 +/- 15.7 (jitter = 65.6)	9.433
+80	images/sec: 1873.6 +/- 14.0 (jitter = 66.9)	9.475
+90	images/sec: 1873.0 +/- 12.8 (jitter = 65.5)	9.485
+100	images/sec: 1878.0 +/- 11.9 (jitter = 65.5)	9.341
+----------------------------------------------------------------
+total images/sec: 1876.62
+train time:0.13631853103637695 
+----------------------------------------------------------------
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  128 global
+             32 per device
+Num batches: 100
+Num epochs:  0.01
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 915.3 +/- 0.0 (jitter = 0.0)	9.579
+10	images/sec: 964.1 +/- 15.5 (jitter = 63.0)	9.519
+20	images/sec: 963.6 +/- 9.8 (jitter = 50.4)	9.590
+30	images/sec: 970.1 +/- 8.5 (jitter = 50.5)	9.595
+40	images/sec: 972.0 +/- 6.7 (jitter = 40.8)	9.477
+50	images/sec: 972.6 +/- 6.4 (jitter = 40.8)	9.548
+60	images/sec: 972.8 +/- 6.1 (jitter = 45.6)	9.389
+70	images/sec: 976.7 +/- 6.0 (jitter = 43.7)	9.583
+80	images/sec: 975.8 +/- 5.4 (jitter = 42.9)	9.425
+90	images/sec: 975.6 +/- 5.1 (jitter = 46.7)	9.488
+100	images/sec: 975.5 +/- 4.7 (jitter = 46.7)	9.477
+----------------------------------------------------------------
+total images/sec: 974.71
+train time:0.13121580839157104 
+----------------------------------------------------------------
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             16 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 500.0 +/- 0.0 (jitter = 0.0)	9.740
+10	images/sec: 508.4 +/- 6.7 (jitter = 11.5)	9.653
+20	images/sec: 515.3 +/- 5.4 (jitter = 24.9)	9.505
+30	images/sec: 520.8 +/- 6.5 (jitter = 25.3)	9.356
+40	images/sec: 521.5 +/- 5.3 (jitter = 24.9)	9.429
+50	images/sec: 512.8 +/- 5.0 (jitter = 31.8)	9.593
+60	images/sec: 511.9 +/- 4.4 (jitter = 31.9)	9.515
+70	images/sec: 509.1 +/- 4.2 (jitter = 35.7)	9.665
+80	images/sec: 511.0 +/- 4.1 (jitter = 34.9)	9.426
+90	images/sec: 509.0 +/- 3.8 (jitter = 35.7)	9.541
+100	images/sec: 510.5 +/- 3.6 (jitter = 35.8)	9.615
+----------------------------------------------------------------
+total images/sec: 510.08
+train time:0.12535593986511231 
+----------------------------------------------------------------
+TensorFlow:  1.8
+Model:       resnet50
+Dataset:     imagenet
+Mode:        training
+SingleSess:  False
+Batch size:  32 global
+             8 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   momentum
+Variables:   replicated
+AllReduce:   None
+==========
+Generating model
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 287.0 +/- 0.0 (jitter = 0.0)	9.664
+10	images/sec: 261.2 +/- 4.6 (jitter = 20.2)	9.697
+20	images/sec: 259.2 +/- 3.5 (jitter = 16.8)	9.695
+30	images/sec: 256.3 +/- 3.3 (jitter = 13.3)	9.553
+40	images/sec: 255.4 +/- 2.9 (jitter = 15.4)	9.653
+50	images/sec: 253.6 +/- 2.6 (jitter = 19.6)	9.469
+60	images/sec: 253.5 +/- 2.4 (jitter = 20.4)	9.729
+70	images/sec: 254.7 +/- 2.2 (jitter = 19.5)	9.121
+80	images/sec: 254.5 +/- 2.2 (jitter = 20.9)	9.549
+90	images/sec: 252.6 +/- 2.1 (jitter = 21.0)	9.291
+100	images/sec: 250.5 +/- 2.1 (jitter = 22.7)	9.714
+----------------------------------------------------------------
+total images/sec: 250.24
+train time:0.12776784658432006 
+----------------------------------------------------------------

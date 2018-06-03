@@ -1,0 +1,22 @@
+38.028442,0.197630,,,,,,,,,,4.500000,22.236155,"Device","Device","Tesla V100-SXM2-16GB (2)","3","49","Tesla V100-SXM2-16GB (2)","3","Tesla V100-SXM2-16GB (1)","2","[CUDA memcpy PtoP]"
+38.035815,0.119966,,,,,,,,,,4.500000,36.631473,"Device","Device","Tesla V100-SXM2-16GB (3)","4","53","Tesla V100-SXM2-16GB (3)","4","Tesla V100-SXM2-16GB (1)","2","[CUDA memcpy PtoP]"
+38.038012,0.100383,,,,,,,,,,4.500000,43.777644,"Device","Device","Tesla V100-SXM2-16GB (0)","1","41","Tesla V100-SXM2-16GB (0)","1","Tesla V100-SXM2-16GB (1)","2","[CUDA memcpy PtoP]"
+
+38.030130,0.100095,,,,,,,,,,4.500000,43.903604,"Device","Device","Tesla V100-SXM2-16GB (1)","2","45","Tesla V100-SXM2-16GB (1)","2","Tesla V100-SXM2-16GB (0)","1","[CUDA memcpy PtoP]"
+38.034408,0.139327,,,,,,,,,,4.500000,31.541132,"Device","Device","Tesla V100-SXM2-16GB (1)","2","45","Tesla V100-SXM2-16GB (1)","2","Tesla V100-SXM2-16GB (3)","4","[CUDA memcpy PtoP]"
+38.038700,0.196638,,,,,,,,,,4.500000,22.348332,"Device","Device","Tesla V100-SXM2-16GB (1)","2","45","Tesla V100-SXM2-16GB (1)","2","Tesla V100-SXM2-16GB (2)","3","[CUDA memcpy PtoP]"
+
+38.032031,0.100255,,,,,,,,,,4.500000,43.833537,"Device","Device","Tesla V100-SXM2-16GB (2)","3","49","Tesla V100-SXM2-16GB (2)","3","Tesla V100-SXM2-16GB (0)","1","[CUDA memcpy PtoP]"
+38.038396,0.099744,,,,,,,,,,4.500000,44.058101,"Device","Device","Tesla V100-SXM2-16GB (1)","2","45","Tesla V100-SXM2-16GB (1)","2","Tesla V100-SXM2-16GB (0)","1","[CUDA memcpy PtoP]"
+38.039232,0.208189,,,,,,,,,,4.500000,21.108374,"Device","Device","Tesla V100-SXM2-16GB (3)","4","53","Tesla V100-SXM2-16GB (3)","4","Tesla V100-SXM2-16GB (0)","1","[CUDA memcpy PtoP]"
+
+38.044145,0.099647,,,,,,,,,,4.500000,44.100989,"Device","Device","Tesla V100-SXM2-16GB (0)","1","41","Tesla V100-SXM2-16GB (0)","1","Tesla V100-SXM2-16GB (1)","2","[CUDA memcpy PtoP]"
+38.044307,0.099615,,,,,,,,,,4.500000,44.115156,"Device","Device","Tesla V100-SXM2-16GB (0)","1","41","Tesla V100-SXM2-16GB (0)","1","Tesla V100-SXM2-16GB (2)","3","[CUDA memcpy PtoP]"
+38.044503,0.196766,,,,,,,,,,4.500000,22.333794,"Device","Device","Tesla V100-SXM2-16GB (0)","1","41","Tesla V100-SXM2-16GB (0)","1","Tesla V100-SXM2-16GB (3)","4","[CUDA memcpy PtoP]"
+
+38.037825,0.198461,,,,,,,,,,4.500000,22.143047,"Device","Device","Tesla V100-SXM2-16GB (2)","3","49","Tesla V100-SXM2-16GB (2)","3","Tesla V100-SXM2-16GB (3)","4","[CUDA memcpy PtoP]"
+38.039068,0.114399,,,,,,,,,,4.500000,38.414070,"Device","Device","Tesla V100-SXM2-16GB (1)","2","45","Tesla V100-SXM2-16GB (1)","2","Tesla V100-SXM2-16GB (3)","4","[CUDA memcpy PtoP]"
+38.052609,0.196606,,,,,,,,,,4.500000,22.351969,"Device","Device","Tesla V100-SXM2-16GB (0)","1","41","Tesla V100-SXM2-16GB (0)","1","Tesla V100-SXM2-16GB (3)","4","[CUDA memcpy PtoP]"
+38.053101,0.196349,,,,,,,,,,4.500000,22.381226,"Device","Device","Tesla V100-SXM2-16GB (3)","4","53","Tesla V100-SXM2-16GB (3)","4","Tesla V100-SXM2-16GB (0)","1","[CUDA memcpy PtoP]"
+38.053305,0.121791,,,,,,,,,,4.500000,36.082562,"Device","Device","Tesla V100-SXM2-16GB (3)","4","53","Tesla V100-SXM2-16GB (3)","4","Tesla V100-SXM2-16GB (1)","2","[CUDA memcpy PtoP]"
+38.053451,0.232381,,,,,,,,,,4.500000,18.910889,"Device","Device","Tesla V100-SXM2-16GB (3)","4","53","Tesla V100-SXM2-16GB (3)","4","Tesla V100-SXM2-16GB (2)","3","[CUDA memcpy PtoP]"

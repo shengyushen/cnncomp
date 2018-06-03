@@ -1,0 +1,51 @@
+
+
+*******************************************************************************
+Sat May  5 01:31:28 2018
+
+
+FIT:    data read from "HtoD"
+        format = z
+        #datapoints = 109
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+bx
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Sat May  5 01:31:35 2018
+
+
+FIT:    data read from "HtoD"
+        format = z
+        #datapoints = 109
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.7989354772e+04   0.00e+00  4.42e+01    1.000000e+00   1.000000e+00
+   5 5.4278933175e-02  -1.53e-03  4.42e-04    2.799383e+01   3.286166e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0542789
+rel. change during last iteration : -1.52684e-08
+
+degrees of freedom    (FIT_NDF)                        : 107
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0225229
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00050728
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 27.9938          +/- 0.004285     (0.01531%)
+b               = 0.328617         +/- 6.856e-05    (0.02086%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.864  1.000 

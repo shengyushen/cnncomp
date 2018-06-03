@@ -1,0 +1,10 @@
+# parameter(MB) GFLOP model
+233 0.727    alexnet			
+233	0.724    caffenet		
+51 2         googlenet		
+98.6 3.8     resnet-50		
+169.8 7.6    resnet-101	
+229.6 11.3   resnet-152	
+#91 6         incep-v3		
+526.4 15.3   vgg-16			
+549.3  19.6  vgg-19			

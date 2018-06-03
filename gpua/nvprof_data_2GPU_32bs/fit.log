@@ -1,0 +1,195 @@
+
+
+*******************************************************************************
+Thu May  3 23:46:38 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(sizeMB)
+	nettimeMS(sizeMB)=a+b*sizeMB
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Thu May  3 23:47:10 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(x)
+	nettimeMS(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.7221998115e+02   0.00e+00  9.42e-01    1.000000e+00   1.000000e+00
+   3 1.5134842762e-03  -1.32e-03  9.42e-04    6.449211e-03   2.485414e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.00151348
+rel. change during last iteration : -1.32411e-08
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00308525
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.51877e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00644921       +/- 0.0002589    (4.015%)
+b               = 0.0248541        +/- 0.0002939    (1.183%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.344  1.000 
+
+
+*******************************************************************************
+Fri May  4 01:58:07 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(x)
+	nettimeMS(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.7221998115e+02   0.00e+00  9.42e-01    1.000000e+00   1.000000e+00
+   3 1.5134842762e-03  -1.32e-03  9.42e-04    6.449211e-03   2.485414e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.00151348
+rel. change during last iteration : -1.32411e-08
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00308525
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.51877e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00644921       +/- 0.0002589    (4.015%)
+b               = 0.0248541        +/- 0.0002939    (1.183%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.344  1.000 
+
+
+*******************************************************************************
+Fri May  4 04:15:08 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(x)
+	nettimeMS(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.7221998115e+02   0.00e+00  9.42e-01    1.000000e+00   1.000000e+00
+   3 1.5134842762e-03  -1.32e-03  9.42e-04    6.449211e-03   2.485414e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.00151348
+rel. change during last iteration : -1.32411e-08
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00308525
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.51877e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00644921       +/- 0.0002589    (4.015%)
+b               = 0.0248541        +/- 0.0002939    (1.183%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.344  1.000 
+
+
+*******************************************************************************
+Fri May  4 05:12:39 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(x)
+	nettimeMS(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.7221998115e+02   0.00e+00  9.42e-01    1.000000e+00   1.000000e+00
+   3 1.5134842762e-03  -1.32e-03  9.42e-04    6.449211e-03   2.485414e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.00151348
+rel. change during last iteration : -1.32411e-08
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00308525
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.51877e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00644921       +/- 0.0002589    (4.015%)
+b               = 0.0248541        +/- 0.0002939    (1.183%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.344  1.000 
+
+
+*******************************************************************************
+Fri May  4 05:12:50 2018
+
+
+FIT:    data read from 'p2p_ms_MB' using 2:1
+        format = x:z
+        #datapoints = 161
+        residuals are weighted equally (unit weight)
+
+function used for fitting: nettimeMS(x)
+	nettimeMS(x)=a+b*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.7221998115e+02   0.00e+00  9.42e-01    1.000000e+00   1.000000e+00
+   3 1.5134842762e-03  -1.32e-03  9.42e-04    6.449211e-03   2.485414e-02
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.00151348
+rel. change during last iteration : -1.32411e-08
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00308525
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.51877e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.00644921       +/- 0.0002589    (4.015%)
+b               = 0.0248541        +/- 0.0002939    (1.183%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.344  1.000 
