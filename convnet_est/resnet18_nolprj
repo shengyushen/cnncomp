@@ -1,0 +1,54 @@
+#	layer	sublay	type	parameters
+#			conv	filterx	filtery	#filter	stride
+	1	1	conv	7	7	64	2
+#			maxpool	sizex	sizey	stride	
+	2	1	maxpool	3	3	2
+	2	0	identity	64	
+	2	2	conv	3	3	64	1
+	2 2 relu	
+	2	3	conv	3	3	64	1
+	2 2 relu	
+	2	4	conv	3	3	64	1
+	2 2 relu	
+	2	5	conv	3	3	64	1
+	2 2 relu	
+#			downsam stride
+	3	1	downsam	2
+	2	0	identity	128
+	3	2	conv	3	3	128	1
+	2 2 relu	
+	3	3	conv	3	3	128	1
+	2 2 relu	
+	3	4	conv	3	3	128	1
+	2 2 relu	
+	3	5	conv	3	3	128	1
+	2 2 relu	
+
+	4	1	downsam 2
+	2	0	identity	256	
+	4	2	conv	3	3	256	1
+	2 2 relu	
+	4	3	conv	3	3	256	1
+	2 2 relu	
+	4	4	conv	3	3	256	1
+	2 2 relu	
+	4	5	conv	3	3	256	1
+	2 2 relu	
+
+	5	1	downsam	2
+	2	0	identity	512
+	5	2	conv	3	3	512	1
+	2 2 relu	
+	5	3	conv	3	3	512	1
+	2 2 relu	
+	5	4	conv	3	3	512	1
+	2 2 relu	
+	5	5	conv	3	3	512	1
+	2 2 relu	
+
+#			avgpool	
+	6	1	avgpool	
+#			gblpool		
+	6	2	gblpool	
+#			fc	#class
+	6	3	fc	1000

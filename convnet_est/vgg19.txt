@@ -1,0 +1,218 @@
+inputx 224
+inputy 224
+inputd 3
+bytePerParm 4
+fetmem         602112
+
+layer 1 1 conv : 
+parameter size 6912
+flop           86704128
+fetmem         12845056
+output         224*224*64
+
+layer 1 2 relu : 
+fetmem         3211264
+
+layer 2 1 conv : 
+parameter size 147456
+flop           1849688064
+fetmem         12845056
+output         224*224*64
+
+layer 2 2 relu : 
+fetmem         3211264
+
+layer 2 3 maxpool : 
+parameter size 0
+flop           3211264
+fetmem         3211264
+output         112*112*64
+
+layer 2 4 relu : 
+fetmem         802816
+
+layer 3 1 conv : 
+parameter size 294912
+flop           924844032
+fetmem         6422528
+output         112*112*128
+
+layer 2 2 relu : 
+fetmem         1605632
+
+layer 4 1 conv : 
+parameter size 589824
+flop           1849688064
+fetmem         6422528
+output         112*112*128
+
+layer 2 2 relu : 
+fetmem         1605632
+
+layer 4 2 maxpool : 
+parameter size 0
+flop           1605632
+fetmem         1605632
+output         56*56*128
+
+layer 2 2 relu : 
+fetmem         401408
+
+layer 5 1 conv : 
+parameter size 1179648
+flop           924844032
+fetmem         3211264
+output         56*56*256
+
+layer 2 2 relu : 
+fetmem         802816
+
+layer 6 1 conv : 
+parameter size 2359296
+flop           1849688064
+fetmem         3211264
+output         56*56*256
+
+layer 2 2 relu : 
+fetmem         802816
+
+layer 7 1 conv : 
+parameter size 2359296
+flop           1849688064
+fetmem         3211264
+output         56*56*256
+
+layer 2 2 relu : 
+fetmem         802816
+
+layer 8 1 conv : 
+parameter size 2359296
+flop           1849688064
+fetmem         3211264
+output         56*56*256
+
+layer 2 2 relu : 
+fetmem         802816
+
+layer 8 2 maxpool : 
+parameter size 0
+flop           802816
+fetmem         802816
+output         28*28*256
+
+layer 2 2 relu : 
+fetmem         200704
+
+layer 9 1 conv : 
+parameter size 4718592
+flop           924844032
+fetmem         1605632
+output         28*28*512
+
+layer 2 2 relu : 
+fetmem         401408
+
+layer 10 1 conv : 
+parameter size 9437184
+flop           1849688064
+fetmem         1605632
+output         28*28*512
+
+layer 2 2 relu : 
+fetmem         401408
+
+layer 11 1 conv : 
+parameter size 9437184
+flop           1849688064
+fetmem         1605632
+output         28*28*512
+
+layer 2 2 relu : 
+fetmem         401408
+
+layer 12 1 conv : 
+parameter size 9437184
+flop           1849688064
+fetmem         1605632
+output         28*28*512
+
+layer 2 2 relu : 
+fetmem         401408
+
+layer 12 2 maxpool : 
+parameter size 0
+flop           401408
+fetmem         401408
+output         14*14*512
+
+layer 2 2 relu : 
+fetmem         100352
+
+layer 13 1 conv : 
+parameter size 9437184
+flop           462422016
+fetmem         401408
+output         14*14*512
+
+layer 2 2 relu : 
+fetmem         100352
+
+layer 14 1 conv : 
+parameter size 9437184
+flop           462422016
+fetmem         401408
+output         14*14*512
+
+layer 2 2 relu : 
+fetmem         100352
+
+layer 15 1 conv : 
+parameter size 9437184
+flop           462422016
+fetmem         401408
+output         14*14*512
+
+layer 2 2 relu : 
+fetmem         100352
+
+layer 16 1 conv : 
+parameter size 9437184
+flop           462422016
+fetmem         401408
+output         14*14*512
+
+layer 2 2 relu : 
+fetmem         100352
+
+layer 16 2 maxpool : 
+parameter size 0
+flop           100352
+fetmem         100352
+output         7*7*512
+
+layer 2 2 relu : 
+fetmem         25088
+
+layer 17 1 fc : 
+parameter size 411041792
+flop           102760448
+fetmem         16384
+output         1*1*4096
+
+layer 2 2 relu : 
+fetmem         4096
+
+layer 18 1 fc : 
+parameter size 67108864
+flop           16777216
+fetmem         16384
+output         1*1*4096
+
+layer 2 2 relu : 
+fetmem         4096
+
+layer 19 1 fc : 
+parameter size 16384000
+flop           4096000
+fetmem         4000
+output         1*1*1000
