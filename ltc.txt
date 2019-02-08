@@ -1,0 +1,25 @@
+  (1): nn.VolumetricConvolution(2 -> 64, 3x3x3, 1,1,1, 1,1,1)
+  (2): nn.Threshold
+  (3): nn.VolumetricMaxPooling(1x2x2, 1,2,2)
+  (4): nn.VolumetricConvolution(64 -> 128, 3x3x3, 1,1,1, 1,1,1)
+  (5): nn.Threshold
+  (6): nn.VolumetricMaxPooling(2x2x2, 2,2,2)
+  (7): nn.VolumetricConvolution(128 -> 256, 3x3x3, 1,1,1, 1,1,1)
+  (8): nn.Threshold
+  (9): nn.VolumetricMaxPooling(2x2x2, 2,2,2)
+  (10): nn.VolumetricConvolution(256 -> 256, 3x3x3, 1,1,1, 1,1,1)
+  (11): nn.Threshold
+  (12): nn.VolumetricMaxPooling(2x2x2, 2,2,2)
+  (13): nn.VolumetricConvolution(256 -> 256, 3x3x3, 1,1,1, 1,1,1)
+  (14): nn.Threshold
+  (15): nn.VolumetricMaxPooling(2x2x2, 2,2,2)
+  (16): nn.View(1536)
+  (17): nn.Linear(1536 -> 2048)
+  (18): nn.Threshold
+  (19): nn.Dropout(0.900000)
+  (20): nn.Linear(2048 -> 2048)
+  (21): nn.Threshold
+  (22): nn.Dropout(0.900000)
+  (23): nn.Linear(2048 -> 101)
+  (24): nn.LogSoftMax
+
