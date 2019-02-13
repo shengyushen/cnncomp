@@ -1,0 +1,6 @@
+#resolution		gflop		feature (number not MB, need to multi by 4 to get MB)		parameter
+416						131.724	149.512
+832						526.954	598.047
+1248					1185.56	1345.61
+1664					2107.62	2392.19
+
