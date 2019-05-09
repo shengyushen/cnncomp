@@ -8,7 +8,7 @@ set label 1 at 1200,50000000000 "2D Flownet Depth 3" center rotate by 11 front
 set label 3 at 1200,190000000000 "2D Flownet Depth 11" center rotate by 11 front
 set label 4 at 600,2000000000 'Classification' center rotate by 20
 set label 5 at 1500,10000000000 'Detection' center rotate by 10
-set label 6 at 1200,130000000000 "3D Depth 100" center rotate by 11 front
+set label 6 at 1200,100000000000 "3D Depth 100" center rotate by 11 front
 set label 7 at 1200,10000000000 "3D Depth 10" center rotate by 11 front
 set logscale y;
 plot "./fgfares/res3" u 2:($3*4*2):(sprintf("%dGB",$3*4*2/1024/1024/1024)) with linesp  notitle,\
